@@ -45,7 +45,7 @@ const SocialLinks = ({ showLabels = false }: { showLabels?: boolean }) => {
           target="_blank"
           rel="noopener noreferrer"
           title={social.name}
-          className={`text-2xl ${social.color} transition duration-300 hover:scale-110 inline-block`}
+          className={`flex flex-col items-center gap-1 transition duration-300 hover:scale-110`}
         >
           <Image
             src={social.icon}
@@ -54,6 +54,11 @@ const SocialLinks = ({ showLabels = false }: { showLabels?: boolean }) => {
             height={30}
             className="rounded-lg shadow-2xl"
           />
+          {showLabels && (
+            <span className="text-xs font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap">
+              {social.name}
+            </span>
+          )}
         </a>
       ))}
     </div>
