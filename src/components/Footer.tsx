@@ -1,8 +1,10 @@
 import Image from "next/image";
 import SocialLinks from "./SocialLinks";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white py-12 px-4 sm:px-8">
@@ -17,36 +19,35 @@ export default function Footer() {
               height={40}
               className="rounded-lg shadow-2xl"
             />
-            <h3 className="text-xl font-bold">Sehat Sathi</h3>
+            <h3 className="text-xl font-bold">{t('brandName')}</h3>
           </div>
           <p className="text-gray-400">
-            Providing quality home care services with professional caregivers
-            and compassionate support for your family's health and wellness.
+            {t('logoDesc')}
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+          <h3 className="text-lg font-bold mb-4">{t('quickLinks')}</h3>
           <ul className="space-y-2 text-gray-400">
             <li>
               <a href="#home" className="hover:text-white transition">
-                Home
+                {t('home')}
               </a>
             </li>
             <li>
               <a href="#services" className="hover:text-white transition">
-                Services
+                {t('services')}
               </a>
             </li>
             <li>
               <a href="#privacy" className="hover:text-white transition">
-                Privacy Policy
+                {t('privacy')}
               </a>
             </li>
             <li>
               <a href="#terms" className="hover:text-white transition">
-                Terms & Conditions
+                {t('terms')}
               </a>
             </li>
           </ul>
@@ -54,7 +55,7 @@ export default function Footer() {
 
         {/* Contact Section */}
         <div>
-          <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+          <h3 className="text-lg font-bold mb-4">{t('footerContact')}</h3>
           <div className="space-y-2 text-gray-400">
             <p className="flex items-center gap-2">
               <span>📞</span>
@@ -88,13 +89,13 @@ export default function Footer() {
         </div>
         <div className="text-center text-gray-400">
           <p>
-            &copy; {currentYear} Sehat Sathi. All rights reserved. |
+            &copy; {currentYear} {t('brandName')}. {t('allRightsReserved')} |
             <a href="#privacy" className="hover:text-white transition ml-2">
-              Privacy Policy
+              {t('privacy')}
             </a>{" "}
             |
             <a href="#terms" className="hover:text-white transition ml-2">
-              Terms & Conditions
+              {t('terms')}
             </a>
           </p>
         </div>

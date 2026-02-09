@@ -4,21 +4,46 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import SocialLinks from "./SocialLinks";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   return (
     <header className="bg-white shadow-md">
       {/* Top Bar */}
-      <div className="bg-gradient-to-r from-primary to-secondary text-white py-3 px-4 flex justify-center items-center">
-        
+      <div className="bg-gradient-to-r from-primary to-secondary text-white py-3 px-4 flex justify-between items-center">
         <span className="flex items-center justify-center gap-2">
           <svg className="w-6 h-5" fill="red" viewBox="0 0 20 20">
             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773c.482 1.329 1.427 2.799 2.519 3.892 1.238 1.238 2.597 2.158 3.902 2.545l.771-1.546a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
           </svg>
-          <span className="text-lg font-semibold">+91-80032 02028</span>
+          <span className="text-lg font-semibold">{t('phone')}</span>
         </span>
+
+        {/* Language Selector */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setLanguage('en')}
+            className={`px-3 py-1 rounded font-semibold transition ${
+              language === 'en'
+                ? 'bg-white text-primary'
+                : 'hover:bg-white hover:bg-opacity-20'
+            }`}
+          >
+            English
+          </button>
+          <button
+            onClick={() => setLanguage('hi')}
+            className={`px-3 py-1 rounded font-semibold transition ${
+              language === 'hi'
+                ? 'bg-white text-primary'
+                : 'hover:bg-white hover:bg-opacity-20'
+            }`}
+          >
+            हिंदी
+          </button>
+        </div>
       </div>
 
       {/* Navigation Bar */}
@@ -33,7 +58,7 @@ export default function Header() {
             className="rounded-lg shadow-2xl"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Sehat Sathi
+            {t('brandName')}
           </span>
         </Link>
 
@@ -43,31 +68,31 @@ export default function Header() {
             href="#home"
             className="text-gray-700 hover:text-primary transition font-medium"
           >
-            Home
+            {t('home')}
           </Link>
           <Link
             href="#services"
             className="text-gray-700 hover:text-primary transition font-medium"
           >
-            Services
+            {t('services')}
           </Link>
           <Link
             href="#privacy"
             className="text-gray-700 hover:text-primary transition font-medium"
           >
-            Privacy Policy
+            {t('privacy')}
           </Link>
           <Link
             href="#terms"
             className="text-gray-700 hover:text-primary transition font-medium"
           >
-            Terms & Conditions
+            {t('terms')}
           </Link>
           <Link
             href="#contact"
             className="text-gray-700 hover:text-primary transition font-medium"
           >
-            Contact
+            {t('contact')}
           </Link>
         </div>
 
@@ -102,31 +127,31 @@ export default function Header() {
             href="#home"
             className="block text-gray-700 hover:text-primary py-2 font-medium"
           >
-            Home
+            {t('home')}
           </Link>
           <Link
             href="#services"
             className="block text-gray-700 hover:text-primary py-2 font-medium"
           >
-            Services
+            {t('services')}
           </Link>
           <Link
             href="#privacy"
             className="block text-gray-700 hover:text-primary py-2 font-medium"
           >
-            Privacy Policy
+            {t('privacy')}
           </Link>
           <Link
             href="#terms"
             className="block text-gray-700 hover:text-primary py-2 font-medium"
           >
-            Terms & Conditions
+            {t('terms')}
           </Link>
           <Link
             href="#contact"
             className="block text-gray-700 hover:text-primary py-2 font-medium"
           >
-            Contact
+            {t('contact')}
           </Link>
         </div>
       )}
