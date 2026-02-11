@@ -57,7 +57,7 @@ export default function Home() {
 
               {/* Social Links */}
               <div className="pt-6 flex items-center gap-2">
-                <span className="text-blue-100">{t('followUs')}</span>
+                {/* <span className="text-blue-100">{t('followUs')}</span> */}
                 <SocialLinks />
               </div>
             </div>
@@ -81,7 +81,21 @@ export default function Home() {
               <p className="text-xl text-gray-600">{t('servicesDescription')}</p>
             </div>
 
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                 {/* Service Card 1 */}
+              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1725870953863-4ad4db0acfc2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Nursing Care"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">🩺 {t('nursingCare')}</h3>
+                  <p className="text-gray-600">{t('nursingCareDesc')}</p>
+                </div>
+              </div>
               {/* Service Card 1 */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
                 <img
@@ -121,18 +135,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Service Card 4 */}
-              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1725870953863-4ad4db0acfc2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Nursing Care"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">🩺 {t('nursingCare')}</h3>
-                  <p className="text-gray-600">{t('nursingCareDesc')}</p>
-                </div>
-              </div>
+           
 
               {/* Service Card 5 */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
@@ -295,7 +298,7 @@ export default function Home() {
                 <div className="text-4xl mb-4">📞</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{t('callUs')}</h3>
                 <p className="text-gray-600">
-                  <a href="tel:+91" className="hover:text-primary transition">
+                  <a href="tel:+918003202028" className="hover:text-primary transition">
                     +91-80032 02028
                   </a>
                 </p>

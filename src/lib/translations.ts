@@ -29,8 +29,8 @@ export const translations = {
     chronicDiseaseDesc: 'Expert management and care for chronic conditions with regular monitoring and support.',
     nursingCare: 'Nursing Care',
     nursingCareDesc: 'Qualified nurses providing professional medical care and medication management at home.',
-    dementiaCare: 'Dementia Care',
-    dementiaCareDesc: 'Specialized care for dementia and Alzheimer\'s patients with trained caregivers.',
+    dementiaCare: 'Diagnostic Services',
+    dementiaCareDesc: 'Blood test, bp monitoring, sugar monitoring at home visit',
     personalAssistance: 'Personal Assistance',
     personalAssistanceDesc: 'Daily living assistance including bathing, dressing, meal prep, and household support.',
 
@@ -57,7 +57,7 @@ export const translations = {
     cookiePolicy: 'Cookie Policy',
     cookiePolicyDesc: 'We use cookies to enhance your browsing experience. You can disable cookies in your browser settings if you prefer.',
     contactUsPrivacy: 'Contact Us',
-    contactUsPrivacyDesc: 'For privacy inquiries, please contact us at privacy@seatsathi.com',
+    contactUsPrivacyDesc: 'For privacy inquiries, please contact us at info.sehatsathi@gmail.com',
 
     // Terms & Conditions
     termsTitle: 'Terms & Conditions',
@@ -118,8 +118,8 @@ export const translations = {
     chronicDiseaseDesc: 'नियमित निगरानी और समर्थन के साथ पुरानी स्थितियों के लिए विशेषज्ञ प्रबंधन और देखभाल।',
     nursingCare: 'नर्सिंग देखभाल',
     nursingCareDesc: 'योग्य नर्सें घर पर पेशेवर चिकित्सा देखभाल और दवा प्रबंधन प्रदान करना।',
-    dementiaCare: 'मनोभ्रंश देखभाल',
-    dementiaCareDesc: 'प्रशिक्षित देखभालकर्ताओं के साथ मनोभ्रंश और अल्जाइमर के रोगियों के लिए विशेषज्ञ देखभाल।',
+    dementiaCare: 'नैदानिक सेवाएं',
+    dementiaCareDesc: 'रक्त परीक्षण, बीपी निगरानी, शरीर निगरानी घर पर',
     personalAssistance: 'व्यक्तिगत सहायता',
     personalAssistanceDesc: 'दैनिक जीवन में सहायता जिसमें नहाना, कपड़े पहनना, भोजन तैयारी और घर का समर्थन शामिल है।',
 
@@ -146,7 +146,7 @@ export const translations = {
     cookiePolicy: 'कुकी नीति',
     cookiePolicyDesc: 'हम आपके ब्राउजिंग अनुभव को बेहतर बनाने के लिए कुकीज़ का उपयोग करते हैं। यदि आप चाहें तो अपनी ब्राउज़र सेटिंग्स में कुकीज़ को अक्षम कर सकते हैं।',
     contactUsPrivacy: 'हमसे संपर्क करें',
-    contactUsPrivacyDesc: 'गोपनीयता संबंधी पूछताछ के लिए, कृपया हमसे privacy@seatsathi.com पर संपर्क करें',
+    contactUsPrivacyDesc: 'गोपनीयता संबंधी पूछताछ के लिए, कृपया हमसे info.sehatsathi@gmail.com पर संपर्क करें',
 
     // Terms & Conditions
     termsTitle: 'नियम और शर्तें',
